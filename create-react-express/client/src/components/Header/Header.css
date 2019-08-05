@@ -1,0 +1,27 @@
+.headerBody {
+    background-color: grey;
+    font-family: 'Aldrich', sans-serif;
+    border-radius: 3rem;
+    height: 10rem;
+    margin-top: 6rem;
+}
+
+#center-logo {
+    font-size: 3rem;
+}
+
+#account-icon {
+    margin: 2rem;
+    font-size: 5rem;
+    padding: 0.5rem;
+}
+
+#coinflip {
+    font-size: 0rem;
+    width: 13rem;
+    height: 4rem;
+    margin-top: 2.3rem;
+    margin-right: -63.9rem;
+    opacity: 0.8;
+}
+
