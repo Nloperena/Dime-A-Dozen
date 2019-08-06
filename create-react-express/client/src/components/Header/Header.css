@@ -16,12 +16,10 @@
     padding: 0.5rem;
 }
 
-#coinflip {
-    font-size: 0rem;
-    width: 13rem;
-    height: 4rem;
-    margin-top: 2.3rem;
-    margin-right: -63.9rem;
-    opacity: 0.8;
+#dojo-icon {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2.1rem;
+    margin-right: -4.9rem;
 }
 

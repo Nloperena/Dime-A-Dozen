@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import Background from "../../media/wallpapers/hardwood.jpg";
-import Dojo from "../../media/Icons/nojo.png"
+import Dojo from "../../media/Icons/dojo.png"
 
 
 
@@ -14,7 +14,7 @@ function Header () {
             <div className = "container">
                 <div className ="row">
                     <div className = "col s2">
-                   <img src = {Dojo}></img>
+                   <img id = "dojo-icon" src = {Dojo}></img>
                     </div>
                     <div className = "col s6">
                     <p id ="center-logo">The Flowjo</p>
