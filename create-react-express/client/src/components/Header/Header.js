@@ -1,8 +1,11 @@
 import React from "react";
 import "./Header.css";
-import "../../media/cap.png"
-import logo from "../../media/cap.png"
-import coin from "../../media/coinflip.gif"
+import Background from "../../media/wallpapers/hardwood.jpg";
+import Dojo from "../../media/Icons/nojo.png"
+
+
+
+
 
 function Header () {
     return (
@@ -11,10 +14,10 @@ function Header () {
             <div className = "container">
                 <div className ="row">
                     <div className = "col s2">
-                        <img id ="coinflip" src ={coin}></img>
+                   <img src = {Dojo}></img>
                     </div>
                     <div className = "col s6">
-                    <p id ="center-logo">Dime-A-Dozen</p>
+                    <p id ="center-logo">The Flowjo</p>
                     </div>
                     <div className = "col s4">
                     <i id = "account-icon" class="far fa-user-circle"></i>
