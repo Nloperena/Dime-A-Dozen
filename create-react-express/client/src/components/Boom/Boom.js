@@ -15,17 +15,17 @@ export class Boom extends React.Component {
                 <img id ="boombox" src ={Boombox}/>
             </div>
             <div className ="row">
-                <div className="col-s1"><a className="board waves-effect waves-light pink lighten-4 btn-large">Sound</a>
-                                        <a className="board waves-effect waves-light pink lighten-4 btn-large">Sound</a>
-                                        <a className="board waves-effect waves-light pink lighten-4 btn-large">Sound</a></div>
+                <div className="col-s1"><a className="board waves-effect waves-light pink lighten-1 btn-large">Sound</a>
+                                        <a className="board waves-effect waves-light pink lighten-1 btn-large">Sound</a>
+                                        <a className="board waves-effect waves-light pink lighten-1 btn-large">Sound</a></div>
 
-                <div className="col-s1"><a className="board waves-effect waves-light pink lighten-4 btn-large">Sound</a>
-                                        <a className="board waves-effect waves-light pink lighten-4 btn-large">Sound</a>
-                                        <a className="board waves-effect waves-light pink lighten-4 btn-large">Sound</a></div>
+                <div className="col-s1"><a className="board waves-effect waves-light pink lighten-1 btn-large">Sound</a>
+                                        <a className="board waves-effect waves-light pink lighten-1 btn-large">Sound</a>
+                                        <a className="board waves-effect waves-light pink lighten-1 btn-large">Sound</a></div>
 
-                <div className="col-s1"><a className="board waves-effect waves-light pink lighten-4 btn-large">Sound</a>
-                                        <a className="board waves-effect waves-light pink lighten-4 btn-large">Sound</a>
-                                        <a className="board waves-effect waves-light pink lighten-4 btn-large">Sound</a></div>
+                <div className="col-s1"><a className="board waves-effect waves-light pink lighten-1 btn-large">Sound</a>
+                                        <a className="board waves-effect waves-light pink lighten-1 btn-large">Sound</a>
+                                        <a className="board waves-effect waves-light pink lighten-1 btn-large">Sound</a></div>
             </div>
         </div>
 

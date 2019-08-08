@@ -1,6 +1,6 @@
 #content{
     margin-top:2rem;
-    background-color:tan;
+    background-color:#04B1C2;
     border:solid;
     border-color:white;
     border-radius:1rem;
@@ -13,5 +13,11 @@
 }
 
 .board {
+    color: white;
     margin: 2rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    border: solid;
+    opacity: 0.8;
+    box-shadow: -1px 15px 2px -1px rgba(0, 0, 0, .8);
 }
