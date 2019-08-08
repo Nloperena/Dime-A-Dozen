@@ -1,4 +1,4 @@
-import React from "react";
+    import React from "react";
 import "./Header.css";
 import Background from "../../media/wallpapers/woodpanels.jpg";
 import Dojo from "../../media/Icons/dojo.png"
@@ -10,7 +10,7 @@ import Dojo from "../../media/Icons/dojo.png"
 function Header () {
     return (
         <div className ="container">
-        <nav className = "headerBody">
+        <nav className = " parallax-container headerBody">
             <div className = "container">
                 <div className ="row">
                     <div className = "col s2">

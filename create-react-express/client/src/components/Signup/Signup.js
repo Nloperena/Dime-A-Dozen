@@ -26,6 +26,7 @@ export class Signup extends React.Component {
                         <label className ="white-text" htmlFor="username">Username</label>
                         <input type ="text" name="username" placeholder ="username"></input>
                         </div>
+                        <br />
                     </div>
                     <div className = "container">
                         <div className = "form">
@@ -44,6 +45,7 @@ export class Signup extends React.Component {
                         </div>
                         </div>
                     </div>
+                    <a class="waves-effect #ffc400 amber accent-3 white-text waves-light btn col-s6 offset-s6" id="submit-in">Sign Up</a>
                 </div>
             </div>
         )};
