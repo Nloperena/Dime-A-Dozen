@@ -1,3 +1,17 @@
 #content{
-    background-color:white;
+    margin-top:2rem;
+    background-color:tan;
+    border:solid;
+    border-color:white;
+    border-radius:1rem;
+}
+
+#boombox{
+    width:29rem;
+    height:29rem;
+    margin-bottom:0.5rem;
+}
+
+.board {
+    margin: 2rem;
 }

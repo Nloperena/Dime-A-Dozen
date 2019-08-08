@@ -12,9 +12,10 @@ class App extends Component {
       <div className="App">
         
         <Header />
+        <Boom />
         <Login />
         <Signup />
-        <Boom />
+        
         
         
         {/* <Awesomebutton />
