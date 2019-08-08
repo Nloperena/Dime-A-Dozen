@@ -1,7 +1,8 @@
     import React from "react";
 import "./Header.css";
 import Background from "../../media/wallpapers/woodpanels.jpg";
-import Dojo from "../../media/Icons/dojo.png"
+import Nico from "../../media/Icons/Nico.png"
+
 
 
 
@@ -14,13 +15,14 @@ function Header () {
             <div className = "container">
                 <div className ="row">
                     <div className = "col s2">
-                   <img id = "dojo-icon" src = {Dojo}></img>
+                   
                     </div>
                     <div className = "col s6">
-                    <p id ="center-logo">The Flowjo</p>
+                    <p id ="center-logo">Nicholas Loperena</p>
                     </div>
                     <div className = "col s4">
-                    <i id = "account-icon" class="far fa-user-circle"></i>
+                        <img id = "Nico" className = "circle responsive-img" src ={Nico}></img>
+                    ,
                     </div>
                 </div>
             </div>

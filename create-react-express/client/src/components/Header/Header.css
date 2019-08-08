@@ -8,7 +8,8 @@
 }
 
 #center-logo {
-    font-size: 3rem;
+    font-size: 2.9rem;
+    margin-top:0rem;
 }
 
 #account-icon {
@@ -17,10 +18,16 @@
     padding: 0.5rem;
 }
 
-#dojo-icon {
-    width: 5rem;
-    height: 5rem;
+#doggo-icon {
+    width: 40%;
+    height: 40%;
     margin-top: 2.1rem;
     margin-right: -4.9rem;
 }
 
+#Nico {
+    margin-top:0.7rem;
+    position: absolute;
+    width: 7.5rem;
+    border:solid;
+}
