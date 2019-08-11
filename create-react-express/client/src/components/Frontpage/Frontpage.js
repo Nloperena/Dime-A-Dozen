@@ -1,10 +1,14 @@
 import React from "react";
 import Header from "../Header";
+import Container from "../Container";
+import "./Frontpage.css";
 
 function Frontpage() {
     return (
-        <Header />
-
+        <div>
+        <Header />,
+        <Container />
+        </div>
     );
 }
 
