@@ -32,10 +32,11 @@ class Gettingstarted extends Component {
         </div>
     </div>]
     }
-//  Handles the Host button
-    handleOptionHost () {
+
+//reset card
+    handleReset() {
         this.setState({
-            card: this.setState.card = [<div class="row">
+            card:[<div class="row">
             <div class="col s12">
                 <div class ="container">
                     <div id = "login-signup" class = "card">
@@ -44,8 +45,36 @@ class Gettingstarted extends Component {
                         </div>
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a href="#test4">YEET</a></li>
-                            <li class="tab"><a class="active" href="#test5">JOIN</a></li>
+                            <li class="tab" onClick ={this.handleOptionHost.bind(this)}><a href="#test4">Host</a></li>
+                            <li class="tab" onClick ={this.handleOptionJoin.bind(this)}><a class="active" href="#test5">Join</a></li>
+                            
+                            
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>]
+        });
+    }
+
+
+//  Handles the Host button
+    handleOptionHost () {
+        this.setState({
+            card: this.setState.card = [<div class="row">
+            <div class="col s12">
+                <div class ="container">
+                    <div id = "login-signup" class = "card">
+                        <div class ="card-content">
+
+                        <input id = "Room-Code" type = "text" class = "validate"></input>
+                        <input id = "Room-Code" type = "text" class = "validate"></input>
+                        </div>
+                        <div class = "card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a class ="active" href="#test4">YEET</a></li>
+                            <li class ="tab" onClick ={this.handleReset.bind(this)}><a class="active" href="#test5">Back</a></li>
                         
                         </ul>
                         </div>
@@ -72,6 +101,7 @@ class Gettingstarted extends Component {
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
                             <li class="tab"><a class="active" href="#test5">JOIN</a></li>
+                            <li class ="tab" onClick ={this.handleReset.bind(this)}><a class="active" href="#test5">Back</a></li>
                         </ul>
                         </div>
                     </div>

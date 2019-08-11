@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import Awesomebutton from "./components/Awesomebutton";
 import "./App.css";
-import IntroContent from "./components/IntroContent";
+import Phase1 from "./components/Phase1";
 import Frontpage from "./components/Frontpage";
 
 
