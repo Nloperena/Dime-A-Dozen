@@ -2,13 +2,19 @@
     background-image: url(../../media/wallpapers/woodpanels.jpg);
     font-family: 'Aldrich', sans-serif;
 
-    height: 10rem;
-    margin-top: 6rem;
+    height: 10.5rem;
     border:solid;
 }
 
-.signbutton{
-    margin:3rem;
+.signupbutton{
+    margin-right:5rem;
+    margin-left:5rem;
+    margin-top:2.5rem;
+}
+.signinbutton{
+    margin-right:5rem;
+    margin-left:2.5rem;
+    margin-top:2.5rem;
 }
 
 #center-logo {

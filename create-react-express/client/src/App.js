@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup"
 // import Awesomebutton from "./components/Awesomebutton";
 import "./App.css";
+import IntroContent from "./components/IntroContent";
 
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <IntroContent />
       
 
       </div>

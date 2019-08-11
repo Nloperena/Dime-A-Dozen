@@ -20,15 +20,13 @@ function Header () {
                     <p id ="center-logo">The Flowjo</p>
                     </div>
                     <div className = "col s1">
-                    <a className="signbutton board waves-effect waves-light pink lighten-4 btn-large contact-me">Sign In</a>
+                    <a className="signinbutton board waves-effect waves-light pink lighten-4 btn-large contact-me">Login</a>
                     </div>
                     <div className = "col s1">
-                    <a className="signbutton waves-effect waves-light pink lighten-4 btn-large contact-me">Sign Up</a>
-                    </div>
-                    
+                    <a className="signupbutton waves-effect waves-light pink lighten-4 btn-large contact-me">SignUp</a>
+                    </div>  
                 </div>
             </div>
-            
         </nav>
         
         
