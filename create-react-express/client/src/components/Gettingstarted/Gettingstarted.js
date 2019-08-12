@@ -16,7 +16,7 @@ class Gettingstarted extends Component {
     state = {
         card:[<div class="row">
         <div class="col s12">
-            <div class ="container">
+            <div id="forShadow" class ="container">
                 <div id = "login-signup" class = "card">
                     <div class ="card-content">
                         <h1>WELCOME TO FLOWJO</h1>
@@ -39,7 +39,7 @@ class Gettingstarted extends Component {
         this.setState({
             card:[<div class="row">
             <div class="col s12">
-                <div class ="container">
+                <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card">
                         <div class ="card-content">
                             <h1>WELCOME TO FLOJO</h1>
@@ -74,7 +74,7 @@ class Gettingstarted extends Component {
         this.setState({
             card: this.setState.card = [<div class="row">
             <div class="col s12">
-                <div class ="container">
+                <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card">
                         <div class ="card-content">
                             <div class = "container">
@@ -99,7 +99,7 @@ class Gettingstarted extends Component {
         this.setState({
             card: this.setState.card = [[<div class="row">
             <div class="col s12">
-                <div class ="container">
+                <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card">
                         <div class ="card-content">
                             <div class = "container">
@@ -109,8 +109,8 @@ class Gettingstarted extends Component {
                         </div>
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a class="active" href="#test5">GO!</a></li>
-                            <li class ="tab" onClick ={this.handleWait.bind(this)}><a class="active" href="#test5">Random Name</a></li>
+                            <li class="tab pulse"><a class="active" href="#test5" onClick ={this.handleWait.bind(this)}>GO!</a></li>
+                            <li class ="tab"><a class="active" href="#test5">Random Name</a></li>
                         </ul>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ class Gettingstarted extends Component {
         this.setState({
             card : this.setState.card = [[<div class="row">
             <div class="col s12">
-                <div class ="container">
+                <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card">
                         <div class ="card-content">
                             <div class = "container">
