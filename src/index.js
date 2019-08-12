@@ -10,6 +10,7 @@ import Game from './Assets/Game';
 import Remote from './Assets/Remote';
 import * as serviceWorker from './serviceWorker';
 import Hostpage from "../src/Assets/components/Hostpage";
+import Playerinfo from "./Assets/components/Playerinfo";
 
 
 const routing = (
@@ -18,8 +19,8 @@ const routing = (
         <div>
             <Route exact path="/" component={App}/>
             {/* <Route path="/Join" component={Join}/> */}
-            <Route path="/room/:roomId/:userId?" component={Hostpage}/>
-            <Route path="/room/:roomId/player/:playerId" component={Player}/>
+            <Route exact path="/room/:roomId/:userId?" component={Hostpage}/>
+            <Route path="/room/:roomId/player/:playerId" component={Playerinfo}/>
             {/* <Route path="/Room/:roomId/Game" component={Game}/> */}
             {/* <Route path="/Room/:roomId/Game/:playerId" component={Remote}/> */}
         </div>
