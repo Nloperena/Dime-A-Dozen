@@ -26,7 +26,7 @@ class Gettingstarted extends Component {
                     <div class = "card-tabs">
                     <ul class="tabs tabs-fixed-width">
                         <li class="tab"><Link to="/Room/01/">Host</Link></li>
-                        <li class="tab" ><Link to="/Join">Join</Link></li>
+                        <li class="tab" onClick = {this.handleOptionJoin.bind(this)}>Join</li>
                         
                     </ul>
                     </div>
