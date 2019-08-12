@@ -9,17 +9,19 @@ import Player from './Assets/Player';
 import Game from './Assets/Game';
 import Remote from './Assets/Remote';
 import * as serviceWorker from './serviceWorker';
+import Hostpage from "../src/Assets/components/Hostpage";
+
 
 const routing = (
     <Router>
         <Link to=""></Link>
         <div>
             <Route exact path="/" component={App}/>
-            <Route path="/Join" component={Join}/>
-            <Route path="/room/:roomId/:userId?" component={Host}/>
+            {/* <Route path="/Join" component={Join}/> */}
+            <Route path="/room/:roomId/:userId?" component={Hostpage}/>
             <Route path="/room/:roomId/player/:playerId" component={Player}/>
-            <Route path="/Room/:roomId/Game" component={Game}/>
-            <Route path="/Room/:roomId/Game/:playerId" component={Remote}/>
+            {/* <Route path="/Room/:roomId/Game" component={Game}/> */}
+            {/* <Route path="/Room/:roomId/Game/:playerId" component={Remote}/> */}
         </div>
     </Router>
 )
