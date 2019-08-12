@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import Hostpage from "../Hostpage";
 import "./Gettingstarted.css";
+import Playerinfo from "../Playerinfo";
 
 
 
@@ -49,7 +50,7 @@ class Gettingstarted extends Component {
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
                             <li class="tab" onClick ={this.handleOptionHost.bind(this)}><a href="#test4">Host</a></li>
-                            <li class="tab" onClick ={this.handleOptionJoin.bind(this)}><a class="active" href="#test5">Join</a></li>
+                            <li class="tab"><a class="active" href="#test5">Join</a></li>
                             
                             <li><Link to = "/Room/01">Host</Link></li>
                             <li><Link to = "Join">Join</Link></li>
@@ -87,7 +88,7 @@ class Gettingstarted extends Component {
                         </div>
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a class="active" href="#test5" onClick = {this.handleName.bind(this)}>GO!</a></li>
+                            <li class="tab"><a class="active" href="#test5"><Link to = "/room/00/player/00">GO!</Link></a></li>
                             <li class ="tab" onClick ={this.handleReset.bind(this)}><a class="active" href="#test5">Back</a></li>
                         </ul>
                         </div>
