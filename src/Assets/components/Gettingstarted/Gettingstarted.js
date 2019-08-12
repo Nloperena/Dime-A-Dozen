@@ -51,7 +51,8 @@ class Gettingstarted extends Component {
                             <li class="tab" onClick ={this.handleOptionHost.bind(this)}><a href="#test4">Host</a></li>
                             <li class="tab" onClick ={this.handleOptionJoin.bind(this)}><a class="active" href="#test5">Join</a></li>
                             
-                            
+                            <li><Link to = "/Room/01">Host</Link></li>
+                            <li><Link to = "Join">Join</Link></li>
                         </ul>
                         </div>
                     </div>
