@@ -9,7 +9,7 @@ function Frontpage() {
     return (
         <div>
             <Header />
-            <Phase1 />
+            <Container />
         </div>
     );
 }

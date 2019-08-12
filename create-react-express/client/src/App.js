@@ -3,13 +3,16 @@ import React, { Component } from "react";
 import "./App.css";
 import Phase1 from "./components/Phase1";
 import Frontpage from "./components/Frontpage";
+import Hostpage from "./components/Hostpage";
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <Frontpage />
+        
       
 
       </div>
