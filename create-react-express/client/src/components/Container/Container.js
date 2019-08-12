@@ -1,7 +1,8 @@
 import React, {Component } from "react";
 import "./Container.css";
-import Gettingstarted from "../Gettingstarted";
-import Homepage from "../Hostpage";
+import Phase1 from "../Phase1";
+import Phase2 from "../Phase2";
+
 
 class Container extends Component {
     render() {
@@ -9,7 +10,8 @@ class Container extends Component {
             <div>
 
             <div class = "container">
-             <Gettingstarted />
+             <Phase1 />
+             <Phase2 />
                 
             </div>
             </div>

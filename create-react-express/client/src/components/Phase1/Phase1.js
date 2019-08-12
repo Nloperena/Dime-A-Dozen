@@ -7,7 +7,8 @@ import Hostpage from "../Hostpage";
 function Phase1 () {
     return(
       <div>
-        <Hostpage />
+        <Header />
+        <Gettingstarted />
 
      
       </div>
