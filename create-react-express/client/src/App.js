@@ -1,20 +1,20 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
-import Login from "./components/Login";
-import Signup from "./components/Signup"
 // import Awesomebutton from "./components/Awesomebutton";
 import "./App.css";
+import Phase1 from "./components/Phase1";
+import Phase2 from "./components/Phase2";
+import Frontpage from "./components/Frontpage";
+import Hostpage from "./components/Hostpage";
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Login />
-        <Signup />
-        {/* <Awesomebutton /> */}
-
+        
+        <Phase2 />
+        
+      
 
       </div>
       
