@@ -15,11 +15,11 @@ const routing = (
         <Link to=""></Link>
         <div>
             <Route exact path="/" component={App}/>
-            <Route path="/Join" component={Join}/>
             <Route path="/room/:roomId/:userId?" component={Host}/>
             <Route path="/room/:roomId/player/:playerId" component={Player}/>
-            <Route path="/Room/:roomId/Game" component={Game}/>
-            <Route path="/Room/:roomId/Game/:playerId" component={Remote}/>
+            {/* <Route path="/Join" component={Join}/> */}
+            {/* <Route path="/Room/:roomId/Game" component={Game}/> */}
+            {/* <Route path="/Room/:roomId/Game/:playerId" component={Remote}/> */}
         </div>
     </Router>
 )
