@@ -1,0 +1,30 @@
+.gifbackground {
+    background-image: url("../../media/../media/gifs/Boomba.gif");
+    border:solid;
+    border-color:white;
+    border-radius: 1rem;
+    height:30rem;
+    background-repeat: round
+}
+
+.gifbackground2 {
+    background-image: url("../../media/gifs/thinking.gif");
+    border:solid;
+    border-color:white;
+    border-radius: 1rem;
+    
+    background-position: 3rem;
+    background-attachment: scroll;
+    background-repeat: unset;
+    
+
+}
+
+.loading {
+    opacity: 0.8;
+    border-radius: 1rem;
+    background-color:whitesmoke;
+    border:solid;
+    border-color:black;
+    
+}

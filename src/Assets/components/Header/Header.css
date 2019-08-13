@@ -1,36 +1,24 @@
 .headerBody {
     background-image: url(../../media/wallpapers/woodpanels.jpg);
     font-family: 'Aldrich', sans-serif;
-
-    height: 10.5rem;
     border:solid;
 }
 
-.signupbutton{
-    margin-right:5rem;
-    margin-left:5rem;
-    margin-top:2.5rem;
-}
-.signinbutton{
-    margin-right:5rem;
-    margin-left:2.5rem;
-    margin-top:2.5rem;
+#dojo-icon{
+    width:3.5rem;
+    height:3.5rem;
 }
 
-#center-logo {
-    font-size: 3rem;
+.login {
+    margin-right:3rem;
 }
-
-#account-icon {
-    margin: 2rem;
-    font-size: 5rem;
-    padding: 0.5rem;
+.signup {
+    margin-left:3rem;
 }
-
-#dojo-icon {
-    width: 5rem;
-    height: 5rem;
-    margin-top: 2.1rem;
-    margin-right: -4.9rem;
+#center-logo{
+    
+    font-size: 1.7rem;
+    margin-top: -0.5rem;
+    top: 5rem;
 }
 
