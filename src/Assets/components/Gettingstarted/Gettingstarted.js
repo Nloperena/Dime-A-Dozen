@@ -17,7 +17,9 @@ class Gettingstarted extends Component {
     // Sets default state of the card
 
     state = {
-        card:[<div class="row">
+        card:[
+        <div class = "container">
+        <div class="row">
         <div class="col s12">
             <div id="forShadow" class ="container">
                 <div id = "login-signup" class = "card">
@@ -34,13 +36,16 @@ class Gettingstarted extends Component {
                 </div>
             </div>
         </div>
+        </div>
     </div>]
     }
 
 //reset card
     handleReset() {
         this.setState({
-            card:[<div class="row">
+            card:[
+            <div class ="container">
+            <div class="row">
             <div class="col s12">
                 <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card">
@@ -50,13 +55,11 @@ class Gettingstarted extends Component {
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
                             <li class="tab" onClick ={this.handleOptionHost.bind(this)}><a href="#test4">Host</a></li>
-                            <li class="tab"><a class="active" href="#test5">Join</a></li>
-                            
-                            <li><Link to = "/Room/01">Host</Link></li>
-                            <li><Link to = "Join">Join</Link></li>
+                            <li class="tab" onClick = {this.handleOptionJoin.bind(this)}><a class="active" href="#test5">Join</a></li>
                         </ul>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>]
@@ -76,7 +79,9 @@ class Gettingstarted extends Component {
         // Handles the Join button
     handleOptionJoin () {
         this.setState({
-            card: this.setState.card = [<div class="row">
+            card: this.setState.card = [
+            <div class = "container">
+            <div class="row">
             <div class="col s12">
                 <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card">
@@ -94,6 +99,7 @@ class Gettingstarted extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>]
         })

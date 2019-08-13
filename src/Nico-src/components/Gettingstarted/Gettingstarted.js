@@ -1,6 +1,7 @@
 import React, {Component } from "react";
 import Hostpage from "../Hostpage";
 import "./Gettingstarted.css";
+import Button from "../Awesomebutton";
 
 
 
@@ -19,7 +20,7 @@ class Gettingstarted extends Component {
             <div id="forShadow" class ="container">
                 <div id = "login-signup" class = "card">
                     <div class ="card-content">
-                        <h1>WELCOME TO FLOWJO</h1>
+                        <h5>Join a Room or Sign in!</h5>
                     </div>
                     <div class = "card-tabs">
                     <ul class="tabs tabs-fixed-width">
@@ -42,7 +43,7 @@ class Gettingstarted extends Component {
                 <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card">
                         <div class ="card-content">
-                            <h1>WELCOME TO FLOJO</h1>
+                        <h5>Join a Room or Sign in!</h5>
                         </div>
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
@@ -136,6 +137,7 @@ class Gettingstarted extends Component {
                                     <br></br>
                                     <div class = "pink lighten-4 progress">
                                     <div class = "indeterminate black"></div>
+                                    
                                     </div>
                                 </div>
                         </div>

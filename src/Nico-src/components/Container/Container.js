@@ -1,17 +1,20 @@
 import React, {Component } from "react";
 import "./Container.css";
 import Gettingstarted from "../Gettingstarted";
-import Homepage from "../Hostpage";
+import Header from "../Header";
+import Button from "../Awesomebutton";
 
 class Container extends Component {
     render() {
         return (
             <div>
 
-            <div class = "container">
-             <Gettingstarted />
-                
-            </div>
+            <div className = "container">
+                <Header />
+           </div>
+
+            <Gettingstarted />
+             <Button />
             </div>
         )
     }
