@@ -4,6 +4,7 @@ import "./Phase1.css";
 import Gettingstarted from "../Gettingstarted";
 import Hostpage from "../Hostpage";
 import Container from "../Container";
+import Musicplayer from "../Musicplayer";
 
 function Phase1 () {
     return(

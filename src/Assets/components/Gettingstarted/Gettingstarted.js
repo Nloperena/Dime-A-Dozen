@@ -18,19 +18,18 @@ class Gettingstarted extends Component {
 
     state = {
         card:[
-        <div class = "container">
+        <div class = "container" >
         <div class="row">
         <div class="col s12">
-            <div id="forShadow" class ="container">
-                <div id = "login-signup" class = "card">
-                    <div class ="card-content">
+            <div  class ="container">
+            <div id="intro-container" class = "card">
+                    <div id = "intro"class ="card-content">
                         <h1>WELCOME TO FLOWJO</h1>
                     </div>
                     <div class = "card-tabs">
                     <ul class="tabs tabs-fixed-width">
                         <li class="tab"><Link to="/Room/01/">Host</Link></li>
-                        <li class="tab" onClick = {this.handleOptionJoin.bind(this)}>Join</li>
-                        
+                        <li class="tab" onClick = {this.handleOptionJoin.bind(this)}><a class="active" href="#test5">Join</a></li>
                     </ul>
                     </div>
                 </div>
@@ -47,14 +46,14 @@ class Gettingstarted extends Component {
             <div class ="container">
             <div class="row">
             <div class="col s12">
-                <div id="forShadow" class ="container">
-                    <div id = "login-signup" class = "card">
-                        <div class ="card-content">
+                <div  class ="container">
+                    <div id="intro-container" class = "card">
+                        <div id = "intro" class ="card-content" >
                             <h1>WELCOME TO FLOJO</h1>
                         </div>
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
-                            <li class="tab" onClick ={this.handleOptionHost.bind(this)}><a href="#test4">Host</a></li>
+                        <li class="tab"><Link to="/Room/01/">Host</Link></li>
                             <li class="tab" onClick = {this.handleOptionJoin.bind(this)}><a class="active" href="#test5">Join</a></li>
                         </ul>
                         </div>
@@ -85,7 +84,7 @@ class Gettingstarted extends Component {
             <div class="col s12">
                 <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card">
-                        <div class ="card-content">
+                        <div id = "intro"    class ="card-content">
                             <div class = "container">
                                 <h2>Enter a room ID!</h2>
                             <input id = "Room-Code" type = "text" class = "validate"></input>
@@ -94,7 +93,7 @@ class Gettingstarted extends Component {
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
                             <li class="tab"><a class="active" href="#test5"><Link to = "/room/00/player/00">GO!</Link></a></li>
-                            <li class ="tab" onClick ={this.handleReset.bind(this)}><a class="active" href="#test5">Back</a></li>
+                            <li class ="tab" onClick ={this.handleReset.bind(this)}><a class="" href="#test5">Back</a></li>
                         </ul>
                         </div>
                     </div>

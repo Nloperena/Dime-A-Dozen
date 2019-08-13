@@ -1,0 +1,15 @@
+#intro-container{
+    
+    border-radius: 2rem;
+}
+
+
+#intro {
+    background-image: url("../../media/gifs/pixelbeemo.gif");
+    background-blend-mode: col;
+    background-color:pink;
+    border-radius: 1rem;
+    border:solid;
+    border-color:white;
+    
+}

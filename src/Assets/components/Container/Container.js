@@ -9,7 +9,9 @@ class Container extends Component {
     render() {
         return (
             <div>
+            <div className = "container">
             <Header />
+            </div>
             <Gettingstarted />
             </div>
         )

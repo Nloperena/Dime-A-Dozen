@@ -90,11 +90,13 @@ class Musicplayer extends React.Component {
       return (
           
           <div>
+            <a class ="btn-small pink lighten-4">
               <li
-          key={item.id}
+          key={item.id}s
           onClick={() => this.setState({ selectedTrack: item.title })}>
           {item.title}
               </li>
+              </a>
           </div>
         
       );
