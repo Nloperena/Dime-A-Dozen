@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./App.css";
 //import Phase1 from "./components/Phase1";
 import Frontpage from "./components/Frontpage";
+import Musicplayer from "./components/Musicplayer";
 //import Hostpage from "./components/Hostpage";
 
 
@@ -11,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         
-        <Frontpage />
+        <Musicplayer/>
         
       
 

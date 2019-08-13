@@ -1,6 +1,7 @@
 import React, {Component } from "react";
 import "./Container.css";
 import Gettingstarted from "../Gettingstarted";
+import Musicplayer from "../Musicplayer";
 //import Homepage from "../Hostpage";
 
 class Container extends Component {
@@ -8,10 +9,7 @@ class Container extends Component {
         return (
             <div>
 
-            <div class = "container">
-             <Gettingstarted />
-                
-            </div>
+           
             </div>
         )
     }
