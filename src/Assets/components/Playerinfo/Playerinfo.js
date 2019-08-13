@@ -27,7 +27,7 @@ class Playerinfo extends Component {
                                 
                     <div class = "card-tabs">
                     <ul class="tabs tabs-fixed-width">
-                        <li class="tab pulse"><a class="active" href="#test5" onClick ={this.handleWait.bind(this)}>GO!</a></li>
+                        <li class="tab pulse"><a class="active" href="#test5" onClick ={this.handleGame.bind(this)}>GO!</a></li>
                         <li class ="tab"><a class="active" href="#test5">Random Name</a></li>
                     </ul>
                     </div>
@@ -70,6 +70,38 @@ class Playerinfo extends Component {
         })
     }
 
+    //GAME FOR JOIN ON MOBILE VIEW
+
+    handleGame() {
+        this.setState({
+            card: [<div class = "container">
+            <div class="row">
+            <div class="col s12">
+                <div id="" class ="container  ">
+                    <div id = "login-signup" class = "card gifbackground">
+                        <div class ="card-content">
+                            <div class = "container  center-align">
+                                <h5 class = "white">"Player Name"</h5>
+                                <div class = "container center-align">
+                                    <div class = "row offset-s6">
+                                        <h4>Enter a word to pull</h4>
+                                        <h3><input class ="white" type="text"></input></h3>
+                                    </div>
+                                    <div class = "row">
+                                       
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>]
+        })
+    }
+    
     render() {
         return(
             <div class = "content">
