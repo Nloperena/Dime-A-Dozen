@@ -16,14 +16,12 @@
 }
 
 #rules {
-    border:solid; 
+    border: solid;
     border-radius: 2rem;
-    border-color:white;
-    width:75%;
-    height:30rem;
+    border-color: white;
+    width: 41%;
+    height: 30rem;
     position: absolute;
-    margin-left:4rem;
+    margin-right: 24rem;
     right: 0rem;
-    
-
 }

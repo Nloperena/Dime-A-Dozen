@@ -1,7 +1,7 @@
 #musicplayer {
     margin-top: 2rem;
     background-color:white;
-    width:20%;
+    width:55%;
     height: auto;
     border: solid;
     border-color: black;
@@ -12,8 +12,3 @@
 }
  
 
-.yeet {
-    position: relative;
-    opacity: 1;
-    margin:1.5rem;
-}

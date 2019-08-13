@@ -2,6 +2,7 @@
     background-image: url(../../media/wallpapers/woodpanels.jpg);
     font-family: 'Aldrich', sans-serif;
     border:solid;
+    border-radius: 0.3rem;
 }
 
 #dojo-icon{

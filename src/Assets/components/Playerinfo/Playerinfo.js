@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import Header from "../Header";
 import "./Playerinfo.css"
-import Beemo from "../../media/gifs/boombox.gif"
+import Dance from "../../media/gifs/dance.gif"
+
 
 
 class Playerinfo extends Component {
@@ -49,8 +50,11 @@ class Playerinfo extends Component {
                             <div class = "container loading center-align">
                                 <h5>"Player Name"</h5>
                                 <div class = "container center-align">
+                                    <div class = "row offset-s6">
+                                        <h6>. . .Waiting. . .</h6>
+                                    </div>
                                     <div class = "row">
-                                        <h6>Waiting. . . </h6>
+                                       <img id = "dance" src={Dance}></img>
                                     </div>
                                     </div>
                                     <div class = "pink lighten-4 progress">
