@@ -9,6 +9,8 @@ import Dojo from "../../media/Icons/dojo.png"
 
 
 function Header () {
+
+    
     return (
         <div class ="container">
         <nav className = "headerBody">

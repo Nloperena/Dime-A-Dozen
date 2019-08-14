@@ -4,7 +4,7 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import Hostpage from "../Hostpage";
 import "./Gettingstarted.css";
 import Playerinfo from "../Playerinfo";
-
+import handleGame from "../Hostpage"
 
 
 
@@ -17,6 +17,7 @@ class Gettingstarted extends Component {
     // Sets default state of the card
 
     state = {
+        name:'',
         card:[
         <div class = "container" >
         <div class="row">
@@ -70,8 +71,8 @@ class Gettingstarted extends Component {
     handleOptionHost () {
         this.setState({
             card: this.setState.card = [<div class="row">
-            {Hostpage} TEST
-        </div>]//klkl
+            {Hostpage}
+        </div>]
         })
     }
 
@@ -104,8 +105,12 @@ class Gettingstarted extends Component {
         })
     }
 
+    // Takes the input of the name
+
     handleName() {
+        const {name} =this.state
         this.setState({
+            name: this.setState.name = "",
             card: this.setState.card = [[<div class="row">
             <div class="col s12">
                 <div id="forShadow" class ="container">
@@ -113,7 +118,7 @@ class Gettingstarted extends Component {
                         <div class ="card-content">
                             <div class = "container">
                                 <h2>Enter a Rapper Name</h2>
-                            <input id = "Rapper-Name" type = "text" class = "validate"></input>
+                            <input id = "Rapper-Name" type = "text" value = {name} onChange = {this.handleNameUpdate.bind(this)} class = "validate"></input>
                         </div>
                         </div>
                         <div class = "card-tabs">
@@ -129,15 +134,26 @@ class Gettingstarted extends Component {
         })
     }
 
-    handleWait() {
+    handleNameUpdate = (e) => {
         this.setState({
+            name: e.target.value
+        })
+    }
+
+
+
+    handleWait() {
+        const {name} =this.state
+
+        this.setState({
+            name: this.setState.name = {},
             card : this.setState.card = [[<div class="row">
             <div class="col s12">
                 <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card">
                         <div class ="card-content">
                             <div class = "container">
-                                <h2>"Player Name"</h2>
+                                <h2>{name}</h2>
                                 <div class = "row">
                                     <h3>Waiting...</h3>
                                     <br></br>

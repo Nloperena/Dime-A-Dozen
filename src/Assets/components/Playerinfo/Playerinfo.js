@@ -8,6 +8,10 @@ import Dance from "../../media/gifs/dance.gif"
 class Playerinfo extends Component {
 
     state = {
+        name: this.setState.rappername =[[
+            
+        ]],
+
         card: this.setState.card = [[
             <div class = "container">
             <div class="row">
@@ -19,7 +23,8 @@ class Playerinfo extends Component {
                                 <h5>"Enter Rapper Name"</h5>
                                 <div class = "container center-align">
                                     <div class = "row">
-                                       <input type ="text"></input>
+                                   <textarea defaultValue = {this.props.children} ></textarea> 
+                                       
                                     </div>
                                     </div>
                                     </div>
@@ -27,8 +32,8 @@ class Playerinfo extends Component {
                                 
                     <div class = "card-tabs">
                     <ul class="tabs tabs-fixed-width">
-                        <li class="tab pulse"><a class="active" href="#test5" onClick ={this.handleGame.bind(this)}>GO!</a></li>
-                        <li class ="tab"><a class="active" href="#test5">Random Name</a></li>
+                        <li class="tab pulse"><a class="active" href="#test5" onClick ={this.handleWait.bind(this)}>GO!</a></li>
+                        <li class ="tab"><a class="active" href="#test5" onClick ={this.handleNameUpdate.bind(this)}>Choose Name</a></li>
                     </ul>
                     </div>
                 </div>
@@ -38,7 +43,61 @@ class Playerinfo extends Component {
     </div>]]
     }
 
+
+    getName() {
+
+        var val = this.refs.nickname.value;
+        console.log(val);
+        this.setState({
+            name : this.setState.rappername = [[
+
+                    <div class = "container">
+                    <div class ="row">
+                    <div class = "col s12">
+                    <div className ="container">
+                    <div id = "intro-container" class ="card">
+                    <div id = "intro" class = "card-content">
+                    {/* <div ref = "nickname">{this.props.children}</div> */}
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    
+
+                ]]
+            })
+    }
+
+
+
+    handleNameUpdate (rapperName, i) {
+        console.log("name is registered: " + i)
+        var rapname = this.state.rappername
+        this.setState({name: rapname})
+    }
+
     handleWait() {
+
+        this.setState({
+            name: this.setState.rapperName =[[
+                <div class = "container">
+                <div class ="row">
+                <div class = "col s12">
+                <div className ="container">
+                <div id = "intro-container" class ="card">
+                <div id = "intro" class = "card-content">
+                <h6 id = "rapperName"></h6>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            ]]
+        })
+        
         this.setState({
             card : this.setState.card = [[
             <div class = "container">
@@ -48,7 +107,7 @@ class Playerinfo extends Component {
                     <div id = "login-signup" class = "card gifbackground">
                         <div class ="card-content">
                             <div class = "container loading center-align">
-                                <h5>"Player Name"</h5>
+                                <h5>{this.setState.name}</h5>
                                 <div class = "container center-align">
                                     <div class = "row offset-s6">
                                         <h6>. . .Waiting. . .</h6>
@@ -73,6 +132,7 @@ class Playerinfo extends Component {
     //GAME FOR JOIN ON MOBILE VIEW
 
     handleGame() {
+        
         this.setState({
             card: [<div class = "container">
             <div class="row">
@@ -108,8 +168,9 @@ class Playerinfo extends Component {
                 <div className = "container">
                     <Header />
                 </div>
-              
+                {this.state.name}
                 {this.state.card}
+                
             </div>
         )
     }

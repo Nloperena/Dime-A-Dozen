@@ -34,3 +34,10 @@
     padding-left: 1 rem;
 
 }
+
+#rapperName {
+    text-align: center;
+    font-size:6rem;
+    background-color:white;
+    border-radius: 2rem;
+}
