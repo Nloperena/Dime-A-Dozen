@@ -1,0 +1,25 @@
+.headerBody {
+    background-image: url(../../media/wallpapers/woodpanels.jpg);
+    font-family: 'Aldrich', sans-serif;
+    border:solid;
+    border-radius: 0.3rem;
+}
+
+#dojo-icon{
+    width:3.5rem;
+    height:3.5rem;
+}
+
+.login {
+    margin-right:3rem;
+}
+.signup {
+    margin-left:3rem;
+}
+#center-logo{
+    
+    font-size: 1.7rem;
+    margin-top: -0.5rem;
+    top: 5rem;
+}
+
