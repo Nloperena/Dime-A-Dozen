@@ -13,33 +13,22 @@ import Hostpage from "../src/Assets/components/Hostpage";
 import Playerinfo from "./Assets/components/Playerinfo";
 
 
-const app = require('express')();
-const http = require('http').createServer(app);
-_server = http.createServer(webApp as (req: any, res: any) => void);
 
+const routing = (
+    <Router>
+        <Link to=""></Link>
+        <div>
+            <Route exact path="/" component={App}/>
+            {/* <Route path="/Join" component={Join}/> */}
+            <Route exact path="/room/:roomId/:userId?" component={Hostpage}/>
+            <Route path="/room/:roomId/player/:playerId" component={Playerinfo}/>
+            {/* <Route path="/Room/:roomId/Game" component={Game}/> */}
+            {/* <Route path="/Room/:roomId/Game/:playerId" component={Remote}/> */}
+        </div>
+    </Router>
+)
 
-
-
-app.get('/', function(req, res){
-    res.sendFile('../public/index.html');
-    ReactDOM.render(<App />, document.getElementById('root'));
-    });
-// const routing = (
-//     <Router>
-//         <Link to=""></Link>
-//         <div>
-//             <Route exact path="/" component={App}/>
-//             {/* <Route path="/Join" component={Join}/> */}
-//             <Route exact path="/room/:roomId/:userId?" component={Hostpage}/>
-//             <Route path="/room/:roomId/player/:playerId" component={Playerinfo}/>
-//             {/* <Route path="/Room/:roomId/Game" component={Game}/> */}
-//             {/* <Route path="/Room/:roomId/Game/:playerId" component={Remote}/> */}
-//         </div>
-//     </Router>
-// )
-
-// ReactDOM.render(routing, document.getElementById('root'));
-// ReactDOM.render(routing, document.getElementById('root'));
+ReactDOM.render(routing, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
