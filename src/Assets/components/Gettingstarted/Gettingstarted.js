@@ -4,7 +4,7 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import Hostpage from "../Hostpage";
 import "./Gettingstarted.css";
 import Playerinfo from "../Playerinfo";
-import handleGame from "../Hostpage"
+import handleGame from "../Hostpage";
 
 
 
@@ -16,7 +16,12 @@ class Gettingstarted extends Component {
 
     // Sets default state of the card
 
+
+
     state = {
+        players:[
+
+        ],
         name:'',
         card:[
         <div class = "container" >
@@ -93,7 +98,7 @@ class Gettingstarted extends Component {
                         </div>
                         <div class = "card-tabs">
                         <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a class="active" href="#test5"><Link to = "/room/00/player/00">GO!</Link></a></li>
+                            <li class="tab"><a class="active" href="#test5" onClick = {this.handleOptionJoin.bind(this)}><Link to = "/room/00/player/00">GO!</Link></a></li>
                             <li class ="tab" onClick ={this.handleReset.bind(this)}><a class="" href="#test5">Back</a></li>
                         </ul>
                         </div>

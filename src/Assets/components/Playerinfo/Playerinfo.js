@@ -57,7 +57,7 @@ class Playerinfo extends Component {
                     <div className ="container">
                     <div id = "intro-container" class ="card">
                     <div id = "intro" class = "card-content">
-                    {/* <div ref = "nickname">{this.props.children}</div> */}
+                    Delane
                     </div>
                     </div>
                     </div>
@@ -88,7 +88,7 @@ class Playerinfo extends Component {
                 <div className ="container">
                 <div id = "intro-container" class ="card">
                 <div id = "intro" class = "card-content">
-                <h6 id = "rapperName"></h6>
+                <h6 id = "rapperName">Delane</h6>
                 </div>
                 </div>
                 </div>
