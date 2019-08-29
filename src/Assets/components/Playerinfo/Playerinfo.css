@@ -1,27 +1,29 @@
 .gifbackground {
-    background-image: url("../../media/../media/gifs/Boomba.gif");
+    background-image: url("../../media/../media/gifs/player.gif");
     border:solid;
     border-color:white;
     border-radius: 1rem;
-    height:30rem;
-    background-repeat: round
+    width:100%
 }
 
 .gifbackground2 {
-    background-image: url("../../media/gifs/thinking.gif");
+    background-image: linear-gradient(to bottom, white, lightpink, pink);
     border:solid;
     border-color:white;
     border-radius: 1rem;
-    
-    background-position: 3rem;
-    background-attachment: scroll;
-    background-repeat: unset;
-    
-
+    width:100%;
 }
 
+.loading1 {
+    opacity: 1;
+    border-radius: 1rem;
+    background-color:whitesmoke;
+    border:solid;
+    border-color:black;
+    
+}
 .loading {
-    opacity: 0.8;
+    opacity: 0.4;
     border-radius: 1rem;
     background-color:whitesmoke;
     border:solid;
@@ -37,7 +39,85 @@
 
 #rapperName {
     text-align: center;
-    font-size:6rem;
+    font-size:2rem;
     background-color:white;
     border-radius: 2rem;
+} 
+
+#rapper {
+    background-image: url("../../media/gifs/Boomba.gif");
+    background-blend-mode: col;
+    background-color:pink;
+    border-radius: 1rem;
+    border:solid;
+    border-color:white;
+    width:100%;
+    height:5rem;
+    margin-top: 2rem;
 }
+
+.wordpool {
+    color:white;
+    border-radius: 3rem;
+}
+
+
+@media only screen and (max-width: 700px) {
+    #host {
+        display:none;
+        font-size:10rem;
+    }
+
+    .gifbackground {
+        background-image: url("../../media/../media/gifs/player.gif");
+        border:solid;
+        border-color:white;
+        border-radius: 1rem;
+        height:20rem;
+        background-repeat: round;
+    }
+
+    #dance {
+        width:40%;
+        
+    
+    }
+
+    .loading {
+        opacity: 0.4;
+        border-radius: 1rem;
+        background-color:whitesmoke;
+        border:solid;
+        border-color:black;
+        height:5rem;
+        
+    }
+  }
+
+  @media only screen and (min-width: 701px) {
+    .gifbackground {
+        background-image: url("../../media/../media/gifs/player.gif");
+        border:solid;
+        border-color:white;
+        border-radius: 1rem;
+        height:35rem;
+        background-repeat: round;
+    }
+
+    #dance {
+        width:70%;
+        
+    
+    }
+
+    .loading {
+        opacity: 0.5;
+        border-radius: 1rem;
+        background-color:whitesmoke;
+        border:solid;
+        border-color:black;
+        height:30rem;
+        
+    }
+  }
+  

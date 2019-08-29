@@ -1,14 +1,47 @@
 #musicplayer {
+    text-align: center;
     margin-top: 2rem;
     background-color:white;
     width:100%;
-    height: auto;
+    height: 10rem;
     border: solid;
     border-color: black;
     border-radius: 2rem;
     opacity: 1;
-    box-shadow:18px 19px 4px -17px rgba(0, 0, 0, .8), inset 0 0 0px 0px rgba(0, 0, 0, 1)
+  
+}
+
+.musicplayer-buttons{
+    text-align: left;
+    z-index:1;
+    position: relative;
+}
+
+.musicplayer-controls{
+    position: absolute;
+    bottom:10rem;   
+    right:35rem;
     
 }
- 
+.playlist {
+    margin-top:3.5rem;
+    position: relative;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    /* margin-bottom:0rem; */
+    z-index: 2;
+    
 
+}
+
+.yeet {
+    margin:1rem;
+}
+
+.gifbackground {
+    background-image: url("../../media/../media/gifs/hotdog.gif");
+    border:solid;
+    border-color:white;
+    border-radius: 1rem;
+    width:100%
+}

@@ -2,10 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./Musicplayer.css";
 
-import Murloc from "../../media/sounds/murloc.mp3";
-import Sad from "../../media/sounds/sad-violin.mp3";
-const campfireStory = "../media/sounds/murloc.mp3";
-const bootingUp = "../../media/sounds/tf_nemesis,mp3";
+import Outset from "../../media/sounds/outsetislandremix.mp3";
+import Earthbound from "../../media/sounds/earthbound-lofi.mp3";
+import KKCrusin from "../../media/sounds/KKCruisin.mp3";
+import PokemonGO from "../../media/sounds/poketrap.mp3";
+import Smash from "../../media/sounds/smash.mp3";
+import Dunkey from "../../media/sounds/donkeykongcountry.mp3";
 
 function getTime(time) {
   if (!isNaN(time)) {
@@ -40,17 +42,23 @@ class Musicplayer extends React.Component {
     if (this.state.selectedTrack !== prevState.selectedTrack) {
       let track;
       switch (this.state.selectedTrack) {
-        case "Campfire Story":
-          track = campfireStory;
+        case "Pokemon GO":
+          track = PokemonGO;
           break;
-        case "Booting Up":
-          track = bootingUp;
+        case "K'K'Crusin":
+          track = KKCrusin;
           break;
-        case "Chillin-with-Murloc":
-          track = Murloc;
+        case "Outset Island":
+          track = Outset;
           break;
-        case "Yeet the deeds":
-          track = Sad;
+        case "Earthbound":
+          track = Earthbound;
+          break;
+        case "Smash Bros":
+          track = Smash;
+          break;
+        case "Donkey Kong Country":
+          track = Dunkey;
           break;
         default:
           break;
@@ -82,16 +90,18 @@ class Musicplayer extends React.Component {
     
 
     const list = [
-      { id: 1, title: "Campfire Story" },
-      { id: 2, title: "Booting Up" },
-      { id: 3, title: "Chillin-with-Murloc"},
-      { id: 4, title: "Yeet the deeds"}
+      { id: 1, title: "Smash Bros" },
+      { id: 2, title: "K'K'Crusin" },
+      { id: 3, title: "Outset Island"},
+      { id: 4, title: "Earthbound"},
+      { id: 5, title: "Pokemon GO"},
+      { id: 6, title: "Donkey Kong Country"},
     ].map(item => {
       return (
           
-          <div>
-            <a class ="btn-small pink lighten-4">
-              <li
+          <div className = "musicplayer-buttons">
+            <a class ="btn-small pink lighten-4 playlist">
+              <li 
           key={item.id}s
           onClick={() => this.setState({ selectedTrack: item.title })}>
           {item.title}
@@ -108,8 +118,8 @@ class Musicplayer extends React.Component {
     return (
       <>
         <div className ="container" id = "musicplayer">
-        <h1>Music Player</h1>
-        <div>
+        <h1 id ="musicplayer-title">Flowjo</h1>
+        <div class = "musicplayer-controls">
             
           {this.state.player === "paused" && (
             <button class="yeet waves-effect waves-light btn blue lighten-1" onClick={() => this.setState({ player: "playing" })}>
