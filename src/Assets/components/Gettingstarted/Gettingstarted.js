@@ -149,7 +149,6 @@ class Gettingstarted extends Component {
 
 
     handleWait() {
-        const {name} =this.state
 
         this.setState({
             name: this.setState.name = {},
@@ -159,7 +158,7 @@ class Gettingstarted extends Component {
                     <div id = "login-signup" class = "card">
                         <div class ="card-content">
                             <div class = "container">
-                                <h2>{name}</h2>
+                                <h2></h2>
                                 <div class = "row">
                                     <h3>Waiting...</h3>
                                     <br></br>

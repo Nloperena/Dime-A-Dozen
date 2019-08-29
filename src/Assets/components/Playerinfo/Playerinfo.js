@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Header from "../Header";
 import "./Playerinfo.css"
-import Dance from "../../media/gifs/dance.gif"
+import Dance from "../../media/gifs/Beemo.gif"
 
 
 
@@ -26,7 +26,7 @@ class Playerinfo extends Component {
                 <div id="forShadow" class ="container  ">
                     <div id = "login-signup" class = "card gifbackground2">
                         <div class ="card-content">
-                            <div class = "container loading center-align">
+                            <div class = "container loading1 center-align">
                                 <h5>"Enter Rapper Name"</h5>
                                 <div class = "container center-align">
                                     <div class = "row">
@@ -57,57 +57,24 @@ class Playerinfo extends Component {
     }
 
 
-    getName() {
 
-        var val = this.refs.nickname.value;
-        console.log(val);
-        this.setState({
-            name : this.setState.rappername = [[
-
-                    <div class = "container">
-                    <div class ="row">
-                    <div class = "col s12">
-                    <div className ="container">
-                    <div id = "intro-container" class ="card">
-                    <div id = "intro" class = "card-content">
-                    {this.input.value}
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    
-
-                ]]
-            })
-    }
-
-
-
-    handleNameUpdate (rapperName, i) {
-        console.log("name is registered: " + i)
-        var rapname = this.state.rappername
-        this.setState({name: rapname})
-    }
 
     handleWait() {
 
         this.setState({
             name: this.setState.rapperName =[[
                 <div class = "container">
-                <div class ="row">
+                <div class ="row"  id ="rapper">
                 <div class = "col s12">
-                <div className ="container">
                 <div id = "intro-container" class ="card">
-                <div id = "intro" class = "card-content">
                 <h6 id = "rapperName">{this.input.value}</h6>
                 </div>
                 </div>
                 </div>
                 </div>
-                </div>
-                </div>
+                
+              
+             
             ]]
         })
         
