@@ -7,6 +7,13 @@ import Dance from "../../media/gifs/dance.gif"
 
 class Playerinfo extends Component {
 
+    handleNameSubmit = event => {
+        event.preventDefault();
+        console.log(this.input.value)
+        alert('Your rappername is: ' + this.input.value);
+        
+      };
+
     state = {
         name: this.setState.rappername =[[
             
@@ -23,7 +30,13 @@ class Playerinfo extends Component {
                                 <h5>"Enter Rapper Name"</h5>
                                 <div class = "container center-align">
                                     <div class = "row">
-                                   <textarea defaultValue = {this.props.children} ></textarea> 
+                                    <form>
+                                        <input 
+                                            type="text"
+                                            name="rappername"
+                                            ref={(input) => this.input = input}
+                                        />
+                                     </form>
                                        
                                     </div>
                                     </div>
@@ -33,7 +46,7 @@ class Playerinfo extends Component {
                     <div class = "card-tabs">
                     <ul class="tabs tabs-fixed-width">
                         <li class="tab pulse"><a class="active" href="#test5" onClick ={this.handleWait.bind(this)}>GO!</a></li>
-                        <li class ="tab"><a class="active" href="#test5" onClick ={this.handleNameUpdate.bind(this)}>Choose Name</a></li>
+                        <li class ="tab"><a class="active" href="#test5" onClick ={this.handleNameSubmit.bind(this)}>Choose Name</a></li>
                     </ul>
                     </div>
                 </div>
@@ -57,7 +70,7 @@ class Playerinfo extends Component {
                     <div className ="container">
                     <div id = "intro-container" class ="card">
                     <div id = "intro" class = "card-content">
-                    Delane
+                    {this.input.value}
                     </div>
                     </div>
                     </div>
@@ -88,7 +101,7 @@ class Playerinfo extends Component {
                 <div className ="container">
                 <div id = "intro-container" class ="card">
                 <div id = "intro" class = "card-content">
-                <h6 id = "rapperName">Delane</h6>
+                <h6 id = "rapperName">{this.input.value}</h6>
                 </div>
                 </div>
                 </div>

@@ -19,15 +19,10 @@ function Header () {
                     <div className = "col s2 offset-s1">
                    <img id = "dojo-icon" src = {Dojo} />
                    </div>
-                    <div className = "col s4 offset-s1">
+                    <div className = "col s6 offset-s1">
                     <p id ="center-logo">The Flowjo</p>
                     </div>
-                    <div className = "col s1">
-                    <a className="signinbutton board waves-effect waves-light pink lighten-4 btn-small login">Login</a>
-                    </div>
-                    <div className = "col s1">
-                    <a className="signupbutton waves-effect waves-light pink lighten-4 btn-small signup">SignUp</a>
-                    </div>  
+                    
                 </div>
                 </div>
                 
