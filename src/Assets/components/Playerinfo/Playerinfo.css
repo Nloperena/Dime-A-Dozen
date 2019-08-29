@@ -41,3 +41,15 @@
     background-color:white;
     border-radius: 2rem;
 }
+
+@media only screen and (max-width: 700px) {
+    #host {
+        display:none;
+        font-size:10rem;
+    }
+  }
+  @media only screen and (max-width: 1080px){
+      #host {
+          display:auto;
+      }
+  }
