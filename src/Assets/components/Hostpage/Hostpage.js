@@ -54,6 +54,9 @@ class Hostpage extends Component {
             card: [<div class = "container">
             <div class="row">
             <div class="col s12">
+            <div class = "container">
+                                       <Musicplayer />
+                                    </div>
                 <div id="" class ="container  ">
                     <div id = "login-signup" class = "card gifbackground">
                         <div class ="card-content">
@@ -62,9 +65,6 @@ class Hostpage extends Component {
                                 <div class = "container center-align">
                                     <div class = "row offset-s6">
                                         <h3>RENDER WORD POOL</h3>
-                                    </div>
-                                    <div class = "row">
-                                       <Musicplayer />
                                     </div>
                                     </div>
                                     

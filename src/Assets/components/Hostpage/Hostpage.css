@@ -25,3 +25,11 @@
     margin-right: 24rem;
     right: 0rem;
 }
+
+.gifbackground {
+    background-image: url("../../media/../media/gifs/hotdog.gif");
+    border:solid;
+    border-color:white;
+    border-radius: 1rem;
+    width:100%
+}

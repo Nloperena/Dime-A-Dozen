@@ -3,19 +3,15 @@
     border:solid;
     border-color:white;
     border-radius: 1rem;
-    height:25rem;
-    background-repeat: round;
+    width:100%
 }
 
 .gifbackground2 {
-    background-image: url("../../media/gifs/phone.gif");
+    background-image: linear-gradient(to bottom, white, lightpink, pink);
     border:solid;
     border-color:white;
     border-radius: 1rem;
     width:100%;
-    background-position:2rem 2rem;
-    
-    background-repeat:no-repeat;
 }
 
 .loading1 {

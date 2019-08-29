@@ -23,7 +23,7 @@ class Playerinfo extends Component {
             <div class = "container">
             <div class="row">
             <div class="col s12">
-                <div id="forShadow" class ="container  ">
+                <div class ="container">
                     <div id = "login-signup" class = "card gifbackground2">
                         <div class ="card-content">
                             <div class = "container loading1 center-align">
@@ -83,7 +83,7 @@ class Playerinfo extends Component {
             <div class = "container">
             <div class="row">
             <div class="col s12">
-                <div id="forShadow" class ="container  ">
+                <div id="forShadow" class ="container">
                     <div id = "login-signup" class = "card gifbackground">
                         <div class ="card-content">
                             <div class = "container loading center-align">
