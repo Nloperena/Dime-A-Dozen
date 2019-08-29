@@ -41,7 +41,6 @@ class Start extends React.Component{
             </div>
         )
         
-
     }
 }
 

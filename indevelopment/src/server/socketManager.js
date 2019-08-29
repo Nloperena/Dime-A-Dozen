@@ -27,8 +27,8 @@ module.exports = function(socket){
     })
 
     socket.on('addPlayer', data =>{
-        console.log("adding player " + data.name +"..."+data.socketId)
-        io.to(data.roomId).emit('addPlayer', data);
+        console.log("adding player " + data.name +"..."+data.roomId)
+        io.to(data.roomId).emit('addPlayer', {name:data.name,roomId:data.roomId});
     })
     socket.on('hostStatus', data =>{
         console.log("checking state of room"+data.roomId);

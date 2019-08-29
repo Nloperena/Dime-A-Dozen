@@ -81,7 +81,7 @@ class Player extends React.Component{
           socket.emit('exitRoom',{roomId:this.state.roomId,name:this.state.socketId})
         })
         socket.on('inGame',data=>{
-          if(data.userId === this.state.userId){this.setState({inGame:true})}
+          if(data.name === this.state.name){this.setState({inGame:true})}
         })
       this.setState({socket});
       if(this.state.socketId === null){this.setState({socketId:socket.id});}
