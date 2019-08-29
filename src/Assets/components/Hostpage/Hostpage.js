@@ -71,6 +71,14 @@ class Hostpage extends Component {
                                 </div>
                         </div>
                         </div>
+                        <div class = "card-tabs">
+                                        <ul class="tabs tabs-fixed-width">
+                                            <li class ="tab"><a class="active" href="#test5" //onClick =
+                                            //placerholder//{this.handleNameSubmit.bind(this)}
+                                            //
+                                            >Drop player</a></li>
+                                        </ul>
+                                </div>
                     </div>
                 </div>
             </div>
