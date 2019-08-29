@@ -41,6 +41,12 @@ module.exports = function(socket){
     socket.on('inGame', data =>{
         io.to(data.roomId).emit('inGame',data)
     })
+
+    socket.on('message',data =>{
+        console.log(data.obj)
+        console.log(data.roomId)
+        io.to(data.roomId).emit('message',data.obj)
+    })
 //---------------------------------------
 
 //socket disconected

@@ -1,15 +1,17 @@
 import React from "react"
 import io from "socket.io-client"
 import PlayerList from "./PlayerList"
+import Game from "./Game"
 
-const socketUrl = "http://172.16.133.88:8080"
+const socketUrl = "/"
 
 if(localStorage.getItem("hostState") === null){
   let hostState = {
     socket:null,
     socketId:null,
     active:false,
-    players: [] 
+    players: [],
+    messages: [{name:"Nico & Delane",message:"Survive the Flowjo!"}] 
 }
 localStorage.setItem("hostState",JSON.stringify(hostState))
 }
@@ -22,7 +24,8 @@ class Host extends React.Component{
             socket:null,
             socketId:null,
             active:false,
-            players: [] 
+            players: [],
+            messages: [{name:"Nico & Delane",message:"Survive the Flowjo!"},{name:"Sensei",message:"good luck..."}] 
         }
 
         
@@ -34,7 +37,11 @@ class Host extends React.Component{
     setName = () =>{
       console.log("btn fired");
       
-      this.setState((prevState)=>({players: prevState.players.concat([{name:document.getElementById("playerName").value}])}))
+      this.setState((prevState)=>(
+          {players: prevState.players.concat([{name:document.getElementById("playerName").value}])}
+        ),
+          ()=>{console.log(this.state.players)}
+      )
     }
 
     gameStart = () =>{
@@ -52,7 +59,8 @@ class Host extends React.Component{
         this.setState({
           socketId: savedState.socketId,
           active: savedState.active,
-          players: savedState.players
+          players: savedState.players,
+          messages:savedState.messages
         })
         }
 
@@ -65,7 +73,8 @@ class Host extends React.Component{
         socket:null,
         socketId:this.state.socketId,
         active:this.state.active,
-        players: this.state.players
+        players: this.state.players,
+        messages: this.state.messages
       }
       let saveState = JSON.stringify(currentState)
       localStorage.setItem("hostState", saveState)
@@ -105,6 +114,15 @@ class Host extends React.Component{
           }
         })
 
+        socket.on('message',data=>{
+          console.log(data)
+          this.setState((prevState)=>(
+            {messages: prevState.messages.concat([data])}
+          ),
+            ()=>{console.log(this.state.messages)}
+          )
+        })
+
       })
       this.setState({socket})
     }
@@ -131,7 +149,7 @@ class Host extends React.Component{
       else{return(
         <div>
           <h1>the game!</h1>
-          <h1>{}</h1>
+          <Game players={this.state.players} messages={this.state.messages}/>
         </div>
       )
       }

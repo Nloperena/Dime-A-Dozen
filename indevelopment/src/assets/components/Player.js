@@ -1,7 +1,7 @@
 import React from "react"
 import io from "socket.io-client"
 
-const socketUrl = "http://172.16.127.79:8080/"
+const socketUrl = "/"
 
 if(localStorage.getItem("playerState") === null){
   let playerState = {
@@ -110,7 +110,7 @@ class Player extends React.Component{
       
     addPlayer = ()=>{
       console.log("btn fired")
-      this.state.socket.emit("addPlayer",{name:this.state.name,roomId:this.state.roomId,socketId:this.state.socketId});
+      this.state.socket.emit("addPlayer",{name:this.state.name,roomId:this.state.roomId});
     }
 
     hostStatus = ()=>{
@@ -118,6 +118,11 @@ class Player extends React.Component{
       else{
         this.state.socket.emit("hostStatus",{roomId:this.state.roomId});
       }
+    }
+
+    sendMessage = ()=>{
+      let message = document.getElementById("message").value
+      this.state.socket.emit("message",{obj:{name:this.state.name,message: message},roomId:this.state.roomId})
     }
 
     render(){
@@ -146,7 +151,7 @@ class Player extends React.Component{
           return (
             <div>
               <input type="text" id="message" />
-              <button onClick={this.setRoom}>Send!</button>
+              <button onClick={this.sendMessage}>Send!</button>
             </div>
           )
         }

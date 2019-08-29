@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css"
 
 //components-------------------------------------
 import Start from './assets/components/Start'
 import Host from './assets/components/Host'
 import Player from './assets/components/Player'
+import Header from "./assets/components/Header";
 //-----------------------------------------------
 
 class App extends Component {
@@ -12,13 +14,15 @@ class App extends Component {
 routing = (
   <Router>
     
-    {/* Header and the like goes here */}
+    
 
     <div>
-      <Link to=""></Link>
+      <div className="container">
+      <Header />
       <Route exact path="/" component={Start}/>
       <Route exact path="/host" component={Host}/>
       <Route path="/player" component={Player}/> 
+      </div>
     </div>
   </Router>
 )
