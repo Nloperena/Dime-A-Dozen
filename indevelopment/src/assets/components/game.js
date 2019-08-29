@@ -40,20 +40,48 @@ class Game extends Component {
             )
         }
         else{return(
-            <div>
-                <h1>Hello World!</h1>
-                <h1>current count: {this.state.count}</h1>
-                <h1>current players:</h1>
-                <PlayerList players={this.state.inPlayers} />
-                <h1>rapper index: {this.state.rapperIndex}</h1>
-                <h1>{this.state.inPlayers[this.state.rapperIndex].name}</h1>
+            // <div>
+            //     <h1>Hello World!</h1>
+            //     <h1>current count: {this.state.count}</h1>
+            //     <h1>current players:</h1>
+            //     <PlayerList players={this.state.inPlayers} />
+            //     <h1>rapper index: {this.state.rapperIndex}</h1>
+            //     <h1>{this.state.inPlayers[this.state.rapperIndex].name}</h1>
 
-                <br/>
-                <h1>word:{this.state.messages[this.state.carouselIndex].message}</h1>
-                <h1>from:{this.state.messages[this.state.carouselIndex].name}</h1>
+            //     <br/>
+            //     <h1>word:{this.state.messages[this.state.carouselIndex].message}</h1>
+            //     <h1>from:{this.state.messages[this.state.carouselIndex].name}</h1>
 
-                <br/>
-                <button onClick={this.removeRapper}>WHACK!!</button>
+            //     <br/>
+            //     <button onClick={this.removeRapper}>WHACK!!</button>
+            // </div>
+
+            <div class = "container">
+            <div class="row">
+            <div class="col s12">
+                <div id="" class ="container  ">
+                    <div id = "login-signup" class = "card gifbackground">
+                        <div class ="card-content">
+                            <div class = "container  center-align">
+                                <h5>{this.state.inPlayers[this.state.rapperIndex].name}</h5>
+                                <div class = "container center-align">
+                                    <div class = "row offset-s6">
+                                        <h3>{this.state.messages[this.state.carouselIndex].message}</h3>
+                                        <h2>From:{this.state.messages[this.state.carouselIndex].name}</h2>
+                                    </div>
+                                    <br/>
+                                    <div class = "row">
+                                       <Musicplayer />
+                                    </div>
+                                    </div>
+                                    <button onClick={this.removeRapper}>WHACK!!</button>
+                                    
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         )
 

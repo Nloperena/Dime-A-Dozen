@@ -33,12 +33,32 @@ class Start extends React.Component{
     render(){
         //-----page logic here---
         return(
-            <div>
-            <Link to="/host" onClick={this.hostState}>Host</Link>
-            <Link to="/player" onClick={this.playerState}>Join</Link>
-            <h1>Hello World!</h1>
-            <h1>hyuck hyuck hycuk</h1>
+            // <div>
+            // <Link to="/host" onClick={this.hostState}>Host</Link>
+            // <Link to="/player" onClick={this.hostState}>Join</Link>
+            // <h1>Hello World!</h1>
+            // <h1>hyuck hyuck hycuk</h1>
+            // </div>
+
+            <div class = "container" >
+            <div class="row">
+            <div class="col s12">
+            <div  class ="container">
+            <div id="intro-container" class = "card">
+                    <div id = "intro"class ="card-content">
+                        <h1>WELCOME TO FLOWJO</h1>
+                    </div>
+                    <div class = "card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                        <li class="tab"><Link to="/host" onClick={this.hostState}>Host</Link></li>
+                        <li class="tab"><Link to="/player" onClick={this.hostState}>Join</Link></li>
+                    </ul>
+                    </div>
+                </div>
             </div>
+        </div>
+        </div>
+    </div>
         )
         
     }
